@@ -668,6 +668,7 @@ p { margin: 0 0 16px; }
     background: var(--bg-elev);
     border-bottom: 1px solid var(--line-strong);
     padding: 18px var(--container-pad) 24px;
+     display: none;
   }
   .mobile-menu ul { list-style: none; padding: 0; margin: 0 0 16px; display: grid; gap: 4px; }
   .mobile-menu ul a {
