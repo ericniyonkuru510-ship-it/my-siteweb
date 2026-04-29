@@ -1,1 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact — Eric Niyonkuru</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">EN</span>
+      <span class="brand-name"><span>Eric Niyonkuru</span><small>EU–Africa Trade</small></span>
+    </a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="insights.html">Insights</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" style="color:var(--accent)">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <div class="reveal" style="max-width: 600px;">
+      <div class="eyebrow">Get in touch</div>
+      <h1>Let's Connect</h1>
+      <p class="lead">Open for internships, collaborative research, or consulting on EU-Africa supply chains.</p>
+      
+      <form style="margin-top: 32px;" onsubmit="event.preventDefault(); alert('Form connected! (Requires backend/Netlify forms for prod)');">
+        <div class="form-group">
+          <label>Name</label>
+          <input type="text" class="form-control" placeholder="Your name" required />
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" class="form-control" placeholder="your@email.com" required />
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea class="form-control" rows="5" placeholder="How can we work together?" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message →</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
