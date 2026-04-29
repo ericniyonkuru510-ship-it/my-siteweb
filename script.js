@@ -92,7 +92,7 @@ const I18N = {
     "about.edge.b": "Native fluency in two economic realities, structured European training, and a working preference for execution over abstraction.",
 
     "about.timeline.eyebrow": "Trajectory",
-    "about.timeline.title": "From Bujumbura to Brussels — by design",
+    "about.timeline.title": "From EAC to Brussels — by design",
     "about.t1.year": "Origin",
     "about.t1.title": "Burundi",
     "about.t1.body": "Grew up exposed to informal markets, scarcity dynamics, and the operational realism of African SMEs.",
@@ -210,6 +210,8 @@ const I18N = {
     "lang.en": "Anglais",
     "lang.fr": "Français",
     "lang.nl": "Néerlandais",
+    "lang.sw": "Chinese",
+      "lang.sw": "Spanish",
     "lang.sw": "Kiswahili",
 
     "nav.home": "Accueil",
@@ -217,10 +219,10 @@ const I18N = {
     "nav.insights": "Analyses",
     "nav.projects": "Projets",
     "nav.contact": "Contact",
-    "nav.cta": "Travailler avec moi",
+   
 
     "brand.name": "Eric Niyonkuru",
-    "brand.role": "Commerce UE–Afrique · Supply Chain",
+    "brand.role": "Trade UE–Afrique · Supply Chain",
 
     "home.eyebrow": "Positionnement stratégique · Belgique",
     "home.title.a": "Commerce UE–Afrique &",
@@ -431,7 +433,7 @@ const I18N = {
     "home.metric1.num": "2 Markten",
     "home.metric1.lbl": "EU & EAC focus",
     "home.metric2.num": "4 Talen",
-    "home.metric2.lbl": "EN · FR · NL · SW",
+    "home.metric2.lbl": "EN · FR · NL",
     "home.metric3.num": "1 Missie",
     "home.metric3.lbl": "Handel vereenvoudigen",
 
@@ -490,7 +492,7 @@ const I18N = {
     "about.edge.b": "Native vloeiendheid in twee economische realiteiten, gestructureerde Europese opleiding en een werkende voorkeur voor uitvoering boven abstractie.",
 
     "about.timeline.eyebrow": "Traject",
-    "about.timeline.title": "Van Bujumbura naar Brussel — bewust",
+    "about.timeline.title": "Van EAC naar Brussel — bewust",
     "about.t1.year": "Origine",
     "about.t1.title": "Burundi",
     "about.t1.body": "Opgegroeid met informele markten, schaarstedynamiek en het operationele realisme van Afrikaanse kmo's.",
@@ -586,7 +588,7 @@ const I18N = {
     "contact.info.location": "Gevestigd in",
     "contact.info.location.v": "België · Open voor remote & EU-reizen",
     "contact.info.languages": "Talen",
-    "contact.info.languages.v": "Engels, Frans, Nederlands, Swahili",
+    "contact.info.languages.v": "Engels, Frans, Nederlands, Swahili, spanish",
     "contact.info.availability": "Op dit moment",
     "contact.info.availability.v": "Open voor stages en samenwerking",
 
@@ -801,7 +803,7 @@ const LANG_LABELS = {
   en: "EN · English",
   fr: "FR · Français",
   nl: "NL · Nederlands",
-  sw: "SW · Kiswahili",
+  
 };
 
 const STORAGE_KEY = "eric.lang";
