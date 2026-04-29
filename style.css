@@ -765,3 +765,95 @@ main > svg,
 .menu-overlay {
   background: transparent !important;
 }
+/* =========================================================
+   FINAL PATCH — FIX FOOTER SOCIALS + NAV READABILITY
+   ========================================================= */
+
+/* Fix nav readability */
+.nav {
+  background: rgba(250, 250, 247, 0.92) !important;
+  border-bottom: 1px solid rgba(10, 10, 10, 0.08) !important;
+}
+
+.nav-links a,
+.lang-button {
+  color: #1F1F1F !important;
+}
+
+.nav-links a.active {
+  background: rgba(10, 10, 10, 0.06) !important;
+  color: #0A0A0A !important;
+}
+
+/* Fix footer socials: your links are TEXT, not icons */
+.socials {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 10px !important;
+  align-items: center !important;
+}
+
+.socials a {
+  width: auto !important;
+  height: auto !important;
+  min-width: fit-content !important;
+
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  padding: 10px 14px !important;
+  border-radius: 999px !important;
+
+  background: #ffffff !important;
+  border: 1px solid rgba(10, 10, 10, 0.12) !important;
+
+  color: #0A0A0A !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  line-height: 1 !important;
+  white-space: nowrap !important;
+
+  transition: all 220ms cubic-bezier(.2,.7,.2,1) !important;
+}
+
+.socials a:hover {
+  background: #0A0A0A !important;
+  color: #ffffff !important;
+  border-color: #0A0A0A !important;
+  transform: translateY(-2px) !important;
+}
+
+/* Prevent any SVG from exploding */
+.socials svg,
+.footer svg {
+  width: 16px !important;
+  height: 16px !important;
+  max-width: 16px !important;
+  max-height: 16px !important;
+}
+
+/* Fix footer spacing */
+.footer {
+  background: #F4F4EE !important;
+  color: #404040 !important;
+}
+
+.footer h5 {
+  color: #0A0A0A !important;
+}
+
+.footer p,
+.footer .muted,
+.footer ul a,
+.footer-base {
+  color: #525252 !important;
+}
+
+/* Remove dark accidental overlay */
+.mobile-menu,
+.nav-overlay,
+.overlay,
+.menu-overlay {
+  display: none !important;
+}
