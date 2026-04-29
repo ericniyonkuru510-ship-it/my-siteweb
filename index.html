@@ -1,277 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-  <title>About | Eric Niyonkuru</title>
-  <meta name="description" content="About Eric Niyonkuru — EU–Africa trade, logistics, and supply chain. Background, mission, and long-term vision."/>
-  <meta name="theme-color" content="#FDF8F0"/>
-
-  <!-- Fonts (Elite editorial combo) -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Playfair+Display:ital,wght@1,400;1,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
-
-  <link rel="stylesheet" href="style.css"/>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Eric Niyonkuru — EU–Africa Trade & Supply Chain Insights</title>
+<meta name="description" content="Eric Niyonkuru analyzes and simplifies EU–Africa trade, logistics inefficiencies, supply-chain systems, and market-entry barriers. Independent strategy. Belgium-based." />
+<meta name="theme-color" content="#0B1215" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-<!-- ================= NAV ================= -->
+<!-- ============== NAV ============== -->
 <header class="nav">
   <div class="container nav-inner">
-
     <a class="brand" href="index.html">
       <span class="brand-mark">EN</span>
       <span class="brand-name">
-        <span>Eric Niyonkuru</span>
-        <small>EU–Africa Trade · Supply Chain</small>
+        <span data-i18n="brand.name">Eric Niyonkuru</span>
+        <small data-i18n="brand.role">EU–Africa Trade · Supply Chain</small>
       </span>
     </a>
 
-    <nav class="desktop-nav">
+    <nav>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a class="active" href="about.html">About</a></li>
-        <li><a href="insights.html">Insights</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="about.html" data-i18n="nav.about">About</a></li>
+        <li><a href="insights.html" data-i18n="nav.insights">Insights</a></li>
+        <li><a href="projects.html" data-i18n="nav.projects">Projects</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
       </ul>
     </nav>
 
     <div class="nav-right">
-      <div class="lang-row">
-        <button>EN</button>
-        <button>FR</button>
-        <button>NL</button>
-        <button>SW</button>
+      <div class="lang-switcher">
+        <button class="lang-button" aria-haspopup="true" aria-expanded="false" data-i18n-aria="lang.label">
+          <span class="lang-current">EN</span>
+          <span class="chev"></span>
+        </button>
+        <div class="lang-menu" role="menu">
+          <button data-lang-option="en"><span data-i18n="lang.en">English</span></button>
+          <button data-lang-option="fr"><span data-i18n="lang.fr">French</span></button>
+          <button data-lang-option="nl"><span data-i18n="lang.nl">Dutch</span></button>
+          <button data-lang-option="sw"><span data-i18n="lang.sw">Kiswahili</span></button>
+        </div>
       </div>
-
-      <a class="btn btn-primary"
-         href="https://wa.me/32497658059?text=Hello%20Eric,%20I%20found%20your%20website%20and%20I%20want%20to%20connect."
-         target="_blank" rel="noopener">
-        Work with me →
-      </a>
+      <a class="btn btn-primary" href="contact.html"><span data-i18n="nav.cta">Work with me</span><span class="arrow">→</span></a>
+      <button class="nav-toggle" aria-label="Open menu"><span></span></button>
     </div>
+  </div>
 
+  <div class="mobile-menu">
+    <ul>
+      <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+      <li><a href="about.html" data-i18n="nav.about">About</a></li>
+      <li><a href="insights.html" data-i18n="nav.insights">Insights</a></li>
+      <li><a href="projects.html" data-i18n="nav.projects">Projects</a></li>
+      <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+    </ul>
+    <div class="lang-row">
+      <button data-lang-option="en">EN</button>
+      <button data-lang-option="fr">FR</button>
+      <button data-lang-option="nl">NL</button>
+      <button data-lang-option="sw">SW</button>
+    </div>
   </div>
 </header>
 
-<!-- ================= MAIN ================= -->
-<main>
-
-<!-- ===== HERO ===== -->
+<!-- ============== HERO ============== -->
 <section class="hero">
-  <div class="container">
-
-    <div class="hero-content">
-      <div class="eyebrow">About</div>
-
+  <div class="container hero-grid">
+    <div class="reveal">
+      <div class="eyebrow" data-i18n="home.eyebrow">Strategic positioning · Belgium</div>
       <h1>
-        Two markets. One
-        <span class="serif-italic">operator</span>.
-        A long-term thesis.
+        <span data-i18n="home.title.a">EU–Africa Trade &</span><br />
+        <span class="accent" data-i18n="home.title.b">Supply Chain Insights</span>
       </h1>
-
-      <p class="lead">
-        I operate at the intersection of Europe and Africa — two systems that should exchange more value,
-        move faster, and understand each other with greater precision.
+      <p class="lead" data-i18n="home.subtitle">
+        I analyze and simplify the inefficiencies, hidden costs, and structural barriers that slow trade between Europe and Africa — and translate them into clear, executable strategy.
       </p>
-    </div>
-
-  </div>
-</section>
-
-<!-- ===== STORY + PROFILE ===== -->
-<section class="section-tight">
-  <div class="container">
-
-    <div class="about-grid">
-
-      <!-- LEFT TEXT -->
-      <div>
-        <h2>The Story</h2>
-
-        <p>
-          I was born in Burundi, where informal trade, scarcity, and resilience shape daily economic reality.
-          Moving to Belgium exposed me to structured systems, regulated markets, and institutional capital.
-        </p>
-
-        <p>
-          This contrast is not just background — it is my operating advantage.
-          I understand both the improvisational logic of African SMEs and the structured logic of European systems.
-        </p>
-
-        <p>
-          My focus is simple: reduce friction between these two worlds.
-          Less theory. More execution.
-        </p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="insights.html"><span data-i18n="home.cta.primary">Explore Insights</span><span class="arrow">→</span></a>
+        <a class="btn btn-ghost" href="contact.html"><span data-i18n="home.cta.secondary">Contact Me</span><span class="arrow">→</span></a>
       </div>
 
-      <!-- RIGHT PROFILE -->
-      <aside class="profile-stack">
-
-        <div class="row">
-          <span class="k">Based in</span>
-          <span class="v">Belgium</span>
-        </div>
-
-        <div class="row">
-          <span class="k">Origin</span>
-          <span class="v">Burundi</span>
-        </div>
-
-        <div class="row">
-          <span class="k">Studies</span>
-          <span class="v">International Business</span>
-        </div>
-
-        <div class="row">
-          <span class="k">Focus</span>
-          <span class="v">EU–Africa Trade</span>
-        </div>
-
-        <div class="row">
-          <span class="k">Languages</span>
-          <span class="v">EN · FR · NL · SW</span>
-        </div>
-
-        <div class="row">
-          <span class="k">Open to</span>
-          <span class="v">Internships · Collaboration</span>
-        </div>
-
-      </aside>
-
-    </div>
-
-  </div>
-</section>
-
-<!-- ===== MISSION / VISION / EDGE ===== -->
-<section class="section-tight">
-  <div class="container">
-
-    <div class="section-head">
-      <div class="eyebrow">Framework</div>
-      <h2>What I’m building toward</h2>
-    </div>
-
-    <div class="grid grid-3">
-
-      <article class="card">
-        <span class="tag">Mission</span>
-        <h3>Simplify complexity</h3>
-        <p>
-          Turn fragmented trade systems into clear, decision-ready structures between Europe and Africa.
-        </p>
-      </article>
-
-      <article class="card">
-        <span class="tag">Vision</span>
-        <h3>Build infrastructure</h3>
-        <p>
-          Contribute to companies, tools, and systems that define EU–Africa trade over the next decade.
-        </p>
-      </article>
-
-      <article class="card">
-        <span class="tag">Edge</span>
-        <h3>Dual perspective</h3>
-        <p>
-          Native understanding of emerging markets combined with structured European business training.
-        </p>
-      </article>
-
-    </div>
-
-  </div>
-</section>
-
-<!-- ===== CTA ===== -->
-<section class="section-tight">
-  <div class="container">
-
-    <div class="cta-banner">
-
-      <div>
-        <div class="eyebrow">Collaboration</div>
-
-        <h2>
-          Looking for someone who understands both Brussels and Bujumbura?
-        </h2>
-
-        <p class="lead">
-          I’m open to internships, strategic collaborations, and conversations with operators building across the EU–Africa corridor.
-        </p>
-      </div>
-
-      <div class="cta-actions">
-        <a class="btn btn-primary" href="contact.html">Contact me →</a>
-        <a class="btn btn-ghost" href="projects.html">View projects →</a>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-</main>
-
-<!-- ================= FOOTER ================= -->
-<footer class="footer">
-  <div class="container footer-grid">
-
-    <div>
-      <a class="brand" href="index.html">
-        <span class="brand-mark">EN</span>
-        <span class="brand-name">
-          <span>Eric Niyonkuru</span>
-          <small>EU–Africa Trade · Supply Chain</small>
-        </span>
-      </a>
-
-      <p class="muted">
-        Independent analysis on trade, logistics, and market entry between Europe and Africa.
-      </p>
-    </div>
-
-    <div>
-      <h5>Navigate</h5>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="insights.html">Insights</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
+      <ul class="hero-bullets">
+        <li data-i18n="home.bullet1">EU–Africa trade flow analysis & friction mapping</li>
+        <li data-i18n="home.bullet2">Cross-border logistics, compliance & cost diagnostics</li>
+        <li data-i18n="home.bullet3">Market-entry strategy for SMEs and operators</li>
       </ul>
     </div>
 
-    <div>
-      <h5>Contact</h5>
-      <a class="btn btn-primary" href="mailto:ericniyonkuru510@gmail.com">
-        Email me
-      </a>
+    <aside class="hero-card reveal" data-delay="2">
+      <div class="pill"><span class="pill-dot"></span> <span>EU · EAC corridor</span></div>
+      <h3 style="color:#fff;">Eric Niyonkuru</h3>
+      <p style="color:var(--body)">International Business student. Belgium-based. Burundi-born. Building independent thinking on the EU–Africa corridor.</p>
+
+      <div class="metric-row">
+        <div class="metric"><div class="num" data-i18n="home.metric1.num">2 Markets</div><div class="lbl" data-i18n="home.metric1.lbl">EU & EAC focus</div></div>
+        <div class="metric"><div class="num" data-i18n="home.metric2.num">4 Languages</div><div class="lbl" data-i18n="home.metric2.lbl">EN · FR · NL · SW</div></div>
+        <div class="metric"><div class="num" data-i18n="home.metric3.num">1 Mission</div><div class="lbl" data-i18n="home.metric3.lbl">Simplify trade</div></div>
+      </div>
+
+      <svg viewBox="0 0 360 80" style="margin-top:18px; width:100%; height:auto;" aria-hidden="true">
+        <defs>
+          <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#00FFD1" stop-opacity=".2"/>
+            <stop offset="50%" stop-color="#00FFD1"/>
+            <stop offset="100%" stop-color="#00FFD1" stop-opacity=".2"/>
+          </linearGradient>
+        </defs>
+        <line x1="20" y1="40" x2="340" y2="40" stroke="url(#line)" stroke-width="1.5"/>
+        <circle cx="20" cy="40" r="6" fill="#00FFD1"/>
+        <circle cx="180" cy="40" r="4" fill="#fff" opacity=".6"/>
+        <circle cx="340" cy="40" r="6" fill="#00FFD1"/>
+        <text x="20" y="22" fill="#fff" font-size="10" font-family="Inter, sans-serif" font-weight="600">Brussels</text>
+        <text x="340" y="22" fill="#fff" font-size="10" font-family="Inter, sans-serif" font-weight="600" text-anchor="end">Bujumbura</text>
+        <text x="180" y="62" fill="#9CA3AF" font-size="9" font-family="Inter, sans-serif" text-anchor="middle">EU · EAC trade corridor</text>
+      </svg>
+    </aside>
+  </div>
+</section>
+
+<!-- ============== STRIP ============== -->
+<div class="strip">
+  <div class="container strip-inner">
+    <span data-i18n="strip.1">Trade Compliance</span>
+    <span data-i18n="strip.2">Logistics Strategy</span>
+    <span data-i18n="strip.3">Market Entry</span>
+    <span data-i18n="strip.4">Supply Chain Design</span>
+    <span data-i18n="strip.5">EU–Africa Corridor</span>
+  </div>
+</div>
+
+<!-- ============== PILLARS ============== -->
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow" data-i18n="home.pillars.eyebrow">What I focus on</div>
+      <h2 data-i18n="home.pillars.title">Three lenses for serious EU–Africa operators</h2>
+      <p class="lead muted" style="margin: 0 auto" data-i18n="home.pillars.subtitle">
+        Most trade conversations stop at logistics. Real value is built where compliance, capital, and corridor design meet.
+      </p>
     </div>
 
-    <div>
-      <h5>Connect</h5>
-      <div class="socials">
-        <a href="https://www.linkedin.com/in/niyonkuru-eric" target="_blank">LinkedIn</a>
-        <a href="https://wa.me/32497658059" target="_blank">WhatsApp</a>
-        <a href="https://www.youtube.com/@theemnpodcast" target="_blank">YouTube</a>
-        <a href="https://www.facebook.com/profile.php?id=100008423658883" target="_blank">Facebook</a>
+    <div class="grid grid-3">
+      <article class="card reveal" data-delay="1">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l9-4 9 4-9 4-9-4z"/><path d="M3 12l9 4 9-4"/><path d="M3 17l9 4 9-4"/></svg>
+        </div>
+        <span class="tag">01</span>
+        <h3 data-i18n="home.pillar1.title">Trade & Compliance</h3>
+        <p data-i18n="home.pillar1.body">Decoding the documentation, tariff regimes, and certification logic that decide whether a shipment arrives — or stalls at customs.</p>
+      </article>
+
+      <article class="card reveal" data-delay="2">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h6l2-3 4 6 2-3h4"/></svg>
+        </div>
+        <span class="tag">02</span>
+        <h3 data-i18n="home.pillar2.title">Logistics & Cost Structure</h3>
+        <p data-i18n="home.pillar2.body">Mapping where cost actually lives: handling, demurrage, last-mile, financing, and the soft costs that never show on a freight quote.</p>
+      </article>
+
+      <article class="card reveal" data-delay="3">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18"/></svg>
+        </div>
+        <span class="tag">03</span>
+        <h3 data-i18n="home.pillar3.title">Market Entry & Strategy</h3>
+        <p data-i18n="home.pillar3.body">Helping European SMEs enter African markets — and African operators meet European standards — without burning 18 months of trial and error.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============== FEATURED INSIGHTS ============== -->
+<section class="section" style="background: linear-gradient(180deg, transparent, rgba(0,255,209,.03), transparent);">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow" data-i18n="home.featured.eyebrow">Selected insights</div>
+      <h2 data-i18n="home.featured.title">Sharper questions about a misunderstood corridor</h2>
+    </div>
+
+    <div class="grid grid-2">
+      <article class="insight-card reveal">
+        <span class="num" data-i18n="insight1.num">Insight 01</span>
+        <h3 data-i18n="insight1.title">Why EU–Africa Trade Is Inefficient</h3>
+        <p class="summary" data-i18n="insight1.summary">The bottleneck is rarely the ship. It's the chain of certifications, banking relationships, customs interpretations, and documentation handoffs that decide whether a shipment moves in 4 days or 40.</p>
+      </article>
+      <article class="insight-card reveal" data-delay="1">
+        <span class="num" data-i18n="insight4.num">Insight 04</span>
+        <h3 data-i18n="insight4.title">Why Supply Chain Strategy Matters More Than Logistics Alone</h3>
+        <p class="summary" data-i18n="insight4.summary">Logistics moves a box. Supply chain decides what's in the box, who pays, when it arrives, and what happens if it doesn't.</p>
+      </article>
+    </div>
+
+    <div style="text-align:center; margin-top: 36px;" class="reveal">
+      <a class="btn btn-ghost" href="insights.html"><span data-i18n="home.featured.cta">See all insights</span><span class="arrow">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============== CTA ============== -->
+<section class="section-tight">
+  <div class="container">
+    <div class="cta-banner reveal">
+      <div>
+        <div class="eyebrow" data-i18n="home.cta.eyebrow">Let's build something durable</div>
+        <h2 data-i18n="home.cta.title">Looking for a partner who reads both maps — Brussels and Bujumbura?</h2>
+        <p class="lead" data-i18n="home.cta.body">I'm open to internships, structured collaborations, and conversations with operators, founders, and investors moving capital or goods across the EU–Africa corridor.</p>
+      </div>
+      <div style="display:flex; gap:12px; flex-wrap: wrap;">
+        <a class="btn btn-primary" href="contact.html"><span data-i18n="home.cta.secondary">Contact Me</span><span class="arrow">→</span></a>
+        <a class="btn btn-ghost" href="projects.html"><span data-i18n="nav.projects">Projects</span><span class="arrow">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== FOOTER ============== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html" style="margin-bottom:14px;">
+          <span class="brand-mark">EN</span>
+          <span class="brand-name">
+            <span data-i18n="brand.name">Eric Niyonkuru</span>
+            <small data-i18n="brand.role">EU–Africa Trade · Supply Chain</small>
+          </span>
+        </a>
+        <p class="muted" style="margin-top:14px; max-width: 36ch;" data-i18n="footer.tagline">Independent analysis on EU–Africa trade, logistics, and market entry — written from inside both economic systems.</p>
+      </div>
+
+      <div>
+        <h5 data-i18n="footer.nav">Navigate</h5>
+        <ul>
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="about.html" data-i18n="nav.about">About</a></li>
+          <li><a href="insights.html" data-i18n="nav.insights">Insights</a></li>
+          <li><a href="projects.html" data-i18n="nav.projects">Projects</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h5 data-i18n="footer.subscribe">Stay in touch</h5>
+        <p class="muted" data-i18n="footer.subscribe.body">Direct outreach is the fastest way to reach me.</p>
+        <a class="btn btn-primary" href="mailto:ericniyonkuru510@gmail.com" style="margin-top:10px;">ericniyonkuru510@gmail.com</a>
+      </div>
+
+      <div>
+        <h5 data-i18n="footer.connect">Connect</h5>
+        <div class="socials">
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.22 8h4.56v14H.22V8zm7.5 0h4.37v1.92h.06c.61-1.16 2.1-2.39 4.32-2.39 4.62 0 5.47 3.04 5.47 7v7.47h-4.55v-6.62c0-1.58-.03-3.61-2.2-3.61-2.2 0-2.54 1.72-2.54 3.5V22H7.72V8z"/></svg>
+          </a>
+          <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 00.5 6.2 31 31 0 000 12a31 31 0 00.5 5.8 3 3 0 002.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 002.1-2.1A31 31 0 0024 12a31 31 0 00-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>
+          </a>
+          <a href="https://wa.me/" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 3.5A11 11 0 003.4 17.3L2 22l4.8-1.3a11 11 0 0013.7-17.2zm-8.5 17a9 9 0 01-4.6-1.3l-.3-.2-2.9.8.8-2.8-.2-.3a9 9 0 1115.6-9.1A9 9 0 0112 20.5zm5-6.7c-.3-.1-1.6-.8-1.9-.9-.3-.1-.4-.1-.6.1l-.8 1c-.2.2-.3.2-.6.1a7.4 7.4 0 01-3.6-3.2c-.3-.5.3-.4.8-1.4l.1-.5c0-.2-.6-1.5-.9-2-.2-.5-.5-.4-.6-.4h-.6a1.2 1.2 0 00-.9.4c-.3.4-1.2 1.2-1.2 2.9s1.2 3.4 1.4 3.7c.2.2 2.4 3.7 5.8 5 .8.3 1.4.5 1.9.7.8.3 1.5.2 2.1.1.6-.1 1.6-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 10-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5H15c-1.2 0-1.6.8-1.6 1.6V12h2.7l-.4 2.9h-2.3v7A10 10 0 0022 12z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+          </a>
+          <a href="https://x.com/" target="_blank" rel="noopener" aria-label="X / Twitter">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2H21.5l-7.43 8.49L23 22h-6.83l-5.35-7-6.12 7H1.45l7.95-9.08L1 2h7l4.84 6.4L18.24 2zm-1.2 18h1.86L7.05 4H5.1l11.94 16z"/></svg>
+          </a>
+        </div>
       </div>
     </div>
 
-  </div>
-
-  <div class="container footer-base">
-    <span>© 2026 Eric Niyonkuru</span>
-    <span>Built independently</span>
+    <div class="footer-base">
+      <span data-i18n="footer.copyright">© 2026 Eric Niyonkuru. All rights reserved.</span>
+      <span data-i18n="footer.built">Designed & built independently.</span>
+    </div>
   </div>
 </footer>
 
 <script src="script.js"></script>
-
 </body>
 </html>
