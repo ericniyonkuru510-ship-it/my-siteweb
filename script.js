@@ -9,15 +9,12 @@ const I18N = {
     "lang.label": "Language",
     "lang.en": "English",
     "lang.fr": "French",
-    "lang.nl": "Dutch",
-    "lang.sw": "Kiswahili",
 
     "nav.home": "Home",
     "nav.about": "About",
     "nav.insights": "Insights",
     "nav.projects": "Projects",
     "nav.contact": "Contact",
-    "nav.cta": "Work with me",
 
     "brand.name": "Eric Niyonkuru",
     "brand.role": "EU–Africa Trade · Supply Chain",
