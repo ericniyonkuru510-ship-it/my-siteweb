@@ -690,3 +690,16 @@ p { margin: 0 0 16px; }
   .timeline-item { grid-template-columns: 1fr; }
   .metric-row { grid-template-columns: repeat(3, 1fr); }
 }
+/* FIX: hide broken mobile menu on desktop */
+.mobile-menu {
+  display: none !important;
+}
+
+.nav-toggle {
+  display: none !important;
+}
+
+/* Keep desktop navigation visible */
+.desktop-nav {
+  display: block;
+}
