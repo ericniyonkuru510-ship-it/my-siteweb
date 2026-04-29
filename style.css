@@ -706,3 +706,64 @@ p { margin: 0 0 16px; color: var(--body); }
   .timeline-item { grid-template-columns: 1fr; }
   .metric-row { grid-template-columns: repeat(3, 1fr); }
 }
+/* ===== FIX: oversized social icons + stray dark block ===== */
+
+/* 1. Force social icons to render at icon size, not full page */
+.socials a {
+  width: 40px !important;
+  height: 40px !important;
+  flex: none;
+  overflow: hidden;
+}
+.socials svg {
+  width: 18px !important;
+  height: 18px !important;
+  display: block;
+}
+
+/* 2. Safety net — any SVG that escapes its container gets capped */
+svg:not([width]):not([height]) {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* 3. Remove the dark leftover block (old hero / CTA dark backgrounds) */
+.hero-card,
+.cta-banner,
+.contact-info,
+.card-dark,
+.insight-card .takeaway,
+.timeline-item {
+  background: #FFFFFF !important;
+  color: var(--ink) !important;
+  border: 1px solid var(--line) !important;
+  box-shadow: var(--shadow-card) !important;
+}
+
+.hero-card h1, .hero-card h2, .hero-card h3, .hero-card p,
+.cta-banner h1, .cta-banner h2, .cta-banner h3, .cta-banner p,
+.contact-info h1, .contact-info h2, .contact-info h3, .contact-info p,
+.card-dark h3, .card-dark p,
+.insight-card .takeaway,
+.insight-card .takeaway strong,
+.timeline-item h4, .timeline-item p {
+  color: var(--ink) !important;
+}
+
+.insight-card .takeaway strong { color: var(--accent) !important; }
+
+/* Kill any radial dark glow leftovers */
+.hero::before,
+.cta-banner::after {
+  display: none !important;
+}
+
+/* 4. Make sure the contact-info dark aside icons stay visible on white */
+.contact-info .ico {
+  background: var(--accent-soft) !important;
+  color: var(--accent) !important;
+}
+.contact-row .meta a,
+.contact-row .meta strong { color: var(--ink) !important; }
+.contact-row .meta span { color: var(--ink-mute) !important; }
+.contact-row { border-bottom-color: var(--line) !important; }
